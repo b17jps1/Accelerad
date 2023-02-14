@@ -114,8 +114,8 @@ glrad:	glrad.o
 	$(CC) $(CFLAGS) -o glrad glrad.o -lrgl -lrtrad -lGLU -lGL \
 -lX11 -lXext $(MLIB)
 
-dctimestep:	dctimestep.o cmbsdf.o cmatrix.o
-	$(CC) $(CFLAGS) -o dctimestep dctimestep.o cmbsdf.o cmatrix.o \
+dctimestep:	dctimestep.o cmbsdf.o cmatrix.o cmglare.o
+	$(CC) $(CFLAGS) -o dctimestep dctimestep.o cmbsdf.o cmatrix.o cmglare.o \
 -lrtrad $(MLIB)
 
 rttree_reduce:	rttree_reduce.o
